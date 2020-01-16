@@ -6,7 +6,7 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 define('DB_HOST', 'eu-cdbr-west-02.cleardb.net');
 define('DB_USER', 'b772cc46f45e5a');
 define('DB_PASS', 'b98d3d89');
-define('DB_NAME', 'komfort_dim');
+define('DB_NAME', 'heroku_925a66408b21b09');
 
 function connect()
 {
