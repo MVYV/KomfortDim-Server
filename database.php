@@ -1,10 +1,4 @@
 <?php
-$url = parse_url(getenv("mysql://b772cc46f45e5a:b98d3d89@eu-cdbr-west-02.cleardb.net/DATABASE?reconnect=true"));
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
-
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: PUT, GET, POST, DELETE");
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
