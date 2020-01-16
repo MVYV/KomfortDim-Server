@@ -16,7 +16,7 @@ define('DB_NAME', 'komfort_dim');
 
 function connect()
 {
-    $connect = mysqli_connect(DB_HOST ,DB_USER ,DB_PASS ,@database);
+    $connect = mysqli_connect(DB_HOST ,DB_USER ,DB_PASS ,$database);
 
     if (mysqli_connect_errno($connect)) {
         die("Failed to connect:" . mysqli_connect_error());
