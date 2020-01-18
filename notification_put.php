@@ -3,6 +3,7 @@ require 'database.php';
 
 // Get the posted data.
 $postdata = file_get_contents("php://input");
+date_default_timezone_set('Europe/Kiev');
 
 if(isset($postdata) && !empty($postdata))
 {
