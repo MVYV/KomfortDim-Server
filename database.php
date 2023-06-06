@@ -10,10 +10,10 @@ define('DB_NAME', 'heroku_925a66408b21b09');
 
 function connect()
 {
-    $connect = mysqli_connect(DB_HOST ,DB_USER ,DB_PASS ,DB_NAME);
+    $connect = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
-    if (mysqli_connect_errno($connect)) {
-        die("Failed to connect:" . mysqli_connect_error());
+    if (mysqli_connect_errno()) {
+        die("Failed to connect: " . mysqli_connect_error());
     }
 
     mysqli_set_charset($connect, "utf8");
